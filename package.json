@@ -1,0 +1,33 @@
+{
+  "name": "2800-202210-dtc06",
+  "version": "1.0.0",
+  "description": "## 2800-202210-DTC06",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasshorin/2800-202210-DTC06.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasshorin/2800-202210-DTC06/issues"
+  },
+  "homepage": "https://github.com/vasshorin/2800-202210-DTC06#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "circular-json": "^0.5.9",
+    "common": "^0.2.5",
+    "connect-mongodb-session": "^3.1.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "heroku": "^7.63.4",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
+  }
+}
