@@ -24,7 +24,7 @@ function populateCommunityPosts(userCommunityPost) {
 function loadEventsToCommunityOwnPosts() {
     $('#ownCommunityPost').empty()
     $.ajax({
-        url: 'https://intense-cove-26415.herokuapp.com//ownCommunityPost/read',
+        url: ' https://tranquil-taiga-64921.herokuapp.com//ownCommunityPost/read',
         type: 'GET',
         success: populateCommunityPosts
     })
@@ -35,7 +35,7 @@ function deleteEvent() {
     var postId = $(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: `https://intense-cove-26415.herokuapp.com//ownCommunityPost/delete/${postId}`,
+        url: ` https://tranquil-taiga-64921.herokuapp.com//ownCommunityPost/delete/${postId}`,
         // url: `http://localhost:5002/ownCommunityPost/delete/${postId}`,
         type: 'get',
         success: (x) => {
@@ -61,7 +61,7 @@ function submitCommunityFormBtn() {
     } else {
         console.log(eventTitleVar, eventOrganizerName, eventLocationVar, eventDescriptionVar, timeOfEventPost)
         $.ajax({
-            url: "https://intense-cove-26415.herokuapp.com//newCommunityPostForm/create",
+            url: " https://tranquil-taiga-64921.herokuapp.com//newCommunityPostForm/create",
             type: "put",
             data: {
                 eventTitle: eventTitleVar,

@@ -24,7 +24,7 @@ function populateJobPosts(userJobPost) {
 function loadEventsToJobOwnPosts() {
     $('#ownJobPost').empty()
     $.ajax({
-        url: 'https://intense-cove-26415.herokuapp.com//ownJobPost/read',
+        url: ' https://tranquil-taiga-64921.herokuapp.com//ownJobPost/read',
         type: 'GET',
         success: populateJobPosts
     })
@@ -35,7 +35,7 @@ function deleteEvent() {
     var postId = $(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: `https://intense-cove-26415.herokuapp.com//jobPost/delete/${postId}`,
+        url: ` https://tranquil-taiga-64921.herokuapp.com//jobPost/delete/${postId}`,
         // url: `http://localhost:5002/jobPost/delete/${postId}`,
         type: 'get',
         success: (x) => {
@@ -58,7 +58,7 @@ function submitJobFormBtn() {
     }
     console.log(jobTitle, jobDescription, city, province, jobTimePost)
     $.ajax({
-        url: "https://intense-cove-26415.herokuapp.com//newJobPost/create",
+        url: " https://tranquil-taiga-64921.herokuapp.com//newJobPost/create",
         type: "put",
         data: {
             jobTitle: jobTitle,

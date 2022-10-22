@@ -22,7 +22,7 @@ async function authenticateUser() {
         $('#password').val('')
     } else {
     await $.ajax({
-            url: 'https://intense-cove-26415.herokuapp.com//login/authentication',
+            url: ' https://tranquil-taiga-64921.herokuapp.com//login/authentication',
             // url: 'http://localhost:5002/login/authentication',
             type: 'POST',
             data: {

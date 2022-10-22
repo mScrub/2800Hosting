@@ -74,7 +74,7 @@ async function storeNewUser() {
     password = $('#password').val()
     time = new Date()
     await $.ajax({
-        url: 'https://intense-cove-26415.herokuapp.com//signup/create',
+        url: ' https://tranquil-taiga-64921.herokuapp.com//signup/create',
         // url: 'http://localhost:5002/signup/create',
         type: 'POST',
         data: {
