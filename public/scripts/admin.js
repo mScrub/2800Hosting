@@ -79,7 +79,7 @@ function updateInfo() {
     province = $(`#province${userId}`).val()
     document.getElementById(`user${userId}`).disabled = true
     $.ajax({
-        url: ` https://2800project.azurewebsites.net///updateUserInfo`,
+        url: ` https://2800project.azurewebsites.net//updateUserInfo`,
         // url: 'http://localhost:5002/updateUserInfo',
         type: 'PUT',
         data: {
