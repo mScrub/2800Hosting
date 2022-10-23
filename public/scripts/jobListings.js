@@ -22,7 +22,7 @@ function directPost(){
     postId=$(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: ` https://2800project.azurewebsites.net///jobPosts/${postId}`,
+        url: ` https://2800project.azurewebsites.net//jobPosts/${postId}`,
         // url: `http://localhost:5002/jobPosts/${postId}`,
         type: 'GET',
         success: (x)=>{
@@ -34,7 +34,7 @@ function directPost(){
 {/* // Ajax call to get all posts from the database and call populatePosts to populate the page, when the page loads. */}
 function getPosts() {
     $.ajax({
-        url:' https://2800project.azurewebsites.net///jobPosts/read',
+        url:' https://2800project.azurewebsites.net//jobPosts/read',
         // url: 'http://localhost:5002/jobPosts/read',
         // type: 'GET',
         success: populatePosts
@@ -46,7 +46,7 @@ function directChat() {
     otherUserId = $(this).attr('id')
     console.log(otherUserId)
     $.ajax({
-        url: ` https://2800project.azurewebsites.net///chat/${otherUserId}`,
+        url: ` https://2800project.azurewebsites.net//chat/${otherUserId}`,
         // url: `http://localhost:5002/chat/${otherUserId}`,
         type: 'GET',
         success: (x) => {
