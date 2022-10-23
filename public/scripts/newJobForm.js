@@ -24,7 +24,7 @@ function populateJobPosts(userJobPost) {
 function loadEventsToJobOwnPosts() {
     $('#ownJobPost').empty()
     $.ajax({
-        url: ' https://2800project.azurewebsites.net///ownJobPost/read',
+        url: ' https://2800azurehostv2.azurewebsites.net//ownJobPost/read',
         type: 'GET',
         success: populateJobPosts
     })
@@ -35,7 +35,7 @@ function deleteEvent() {
     var postId = $(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: ` https://2800project.azurewebsites.net///jobPost/delete/${postId}`,
+        url: ` https://2800azurehostv2.azurewebsites.net//jobPost/delete/${postId}`,
         // url: `http://localhost:5002/jobPost/delete/${postId}`,
         type: 'get',
         success: (x) => {
@@ -58,7 +58,7 @@ function submitJobFormBtn() {
     }
     console.log(jobTitle, jobDescription, city, province, jobTimePost)
     $.ajax({
-        url: " https://2800project.azurewebsites.net///newJobPost/create",
+        url: " https://2800azurehostv2.azurewebsites.net//newJobPost/create",
         type: "put",
         data: {
             jobTitle: jobTitle,

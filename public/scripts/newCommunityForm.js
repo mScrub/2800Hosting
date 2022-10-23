@@ -24,7 +24,7 @@ function populateCommunityPosts(userCommunityPost) {
 function loadEventsToCommunityOwnPosts() {
     $('#ownCommunityPost').empty()
     $.ajax({
-        url: ' https://2800project.azurewebsites.net///ownCommunityPost/read',
+        url: ' https://2800azurehostv2.azurewebsites.net//ownCommunityPost/read',
         type: 'GET',
         success: populateCommunityPosts
     })
@@ -35,7 +35,7 @@ function deleteEvent() {
     var postId = $(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: ` https://2800project.azurewebsites.net///ownCommunityPost/delete/${postId}`,
+        url: ` https://2800azurehostv2.azurewebsites.net//ownCommunityPost/delete/${postId}`,
         // url: `http://localhost:5002/ownCommunityPost/delete/${postId}`,
         type: 'get',
         success: (x) => {
@@ -61,7 +61,7 @@ function submitCommunityFormBtn() {
     } else {
         console.log(eventTitleVar, eventOrganizerName, eventLocationVar, eventDescriptionVar, timeOfEventPost)
         $.ajax({
-            url: " https://2800project.azurewebsites.net///newCommunityPostForm/create",
+            url: " https://2800azurehostv2.azurewebsites.net//newCommunityPostForm/create",
             type: "put",
             data: {
                 eventTitle: eventTitleVar,
