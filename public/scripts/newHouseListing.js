@@ -47,7 +47,11 @@ function uploadImage() {
 function loadEventsToMainDiv() {
     $('#ownPosts').empty()
     $.ajax({
+<<<<<<< HEAD
         url:' https://2800project.azurewebsites.net//ownHousePost/read',
+=======
+        url:' https://2800azurehostv2.azurewebsites.net//ownHousePost/read',
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/ownHousePost/read',
         type: 'GET',
         success: populatePosts
@@ -60,7 +64,11 @@ function deleteEvent() {
     var postId = $(this).attr('id')
     console.log(postId)
     $.ajax({
+<<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//housingPost/delete/${postId}`,
+=======
+        url: ` https://2800azurehostv2.azurewebsites.net//housingPost/delete/${postId}`,
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: `http://localhost:5002/housingPost/delete/${postId}`,
         type: 'get',
         success: (x) => {
@@ -88,7 +96,11 @@ function submitForm() {
     } else {
         console.log(title, description, price, time)
         $.ajax({
+<<<<<<< HEAD
             url: " https://2800project.azurewebsites.net//newHousePost/create",
+=======
+            url: " https://2800azurehostv2.azurewebsites.net//newHousePost/create",
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
             // url: "http://localhost:5002/newHousePost/create",
             type: "put",
             data: {

@@ -79,7 +79,11 @@ function updateInfo() {
     province = $(`#province${userId}`).val()
     document.getElementById(`user${userId}`).disabled = true
     $.ajax({
+<<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//updateUserInfo`,
+=======
+        url: ` https://2800azurehostv2.azurewebsites.net//updateUserInfo`,
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/updateUserInfo',
         type: 'PUT',
         data: {
@@ -126,7 +130,11 @@ function getPosts() {
     postType = $(this).attr('id')
     console.log(userId, postType)
     $.ajax({
+<<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//getPosts/${postType}`,
+=======
+        url: ` https://2800azurehostv2.azurewebsites.net//getPosts/${postType}`,
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: `http://localhost:5002/getPosts/${userId}/${postType}`,
         type: 'GET',
         success: populatePosts
@@ -136,7 +144,11 @@ function getPosts() {
 // Get all users
 function getUsers() {
     $.ajax({
+<<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//getAllUsers`,
+=======
+        url: ` https://2800azurehostv2.azurewebsites.net//getAllUsers`,
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/getAllUsers',
         type: 'GET',
         success: populateUsers
@@ -148,11 +160,19 @@ function deletePost(){
     postId=$(this).attr('value')
     postType=$(this).attr('id')
     if(postType=='housePosts'){
+<<<<<<< HEAD
         deleteUrl=` https://2800project.azurewebsites.net//housingPost/delete/${postId}`
     }else if(postType=='communityPosts'){
         deleteUrl=` https://2800project.azurewebsites.net//ownCommunityPost/delete/${postId}`
     }else if(postType=='jobPosts'){
         deleteUrl=` https://2800project.azurewebsites.net//jobPost/delete/${postId}`
+=======
+        deleteUrl=` https://2800azurehostv2.azurewebsites.net//housingPost/delete/${postId}`
+    }else if(postType=='communityPosts'){
+        deleteUrl=` https://2800azurehostv2.azurewebsites.net//ownCommunityPost/delete/${postId}`
+    }else if(postType=='jobPosts'){
+        deleteUrl=` https://2800azurehostv2.azurewebsites.net//jobPost/delete/${postId}`
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
     }
     $.ajax({
         url: deleteUrl,

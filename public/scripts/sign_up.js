@@ -74,7 +74,11 @@ async function storeNewUser() {
     password = $('#password').val()
     time = new Date()
     await $.ajax({
+<<<<<<< HEAD
         url: ' https://2800project.azurewebsites.net//signup/create',
+=======
+        url: ' https://2800azurehostv2.azurewebsites.net//signup/create',
+>>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/signup/create',
         type: 'POST',
         data: {
