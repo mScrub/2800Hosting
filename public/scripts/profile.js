@@ -17,11 +17,7 @@ function populateUserInfo(userobj) {
 
 function getUserobj() {
     $.ajax({
-<<<<<<< HEAD
-        url: ` https://2800project.azurewebsites.net//user`,
-=======
         url: ` https://2800azurehostv2.azurewebsites.net//user`,
->>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/user',
         type: 'GET',
         success: populateUserInfo
@@ -43,11 +39,7 @@ function uploadProfile() {
             uploadStorage.snapshot.ref.getDownloadURL().then((pictureURL) => {
                 console.log('profile picture URL: ', pictureURL);
                 $.ajax({
-<<<<<<< HEAD
-                    url: ` https://2800project.azurewebsites.net//uploadProfilePic`,
-=======
                     url: ` https://2800azurehostv2.azurewebsites.net//uploadProfilePic`,
->>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
                     // url: 'http://localhost:5002/uploadProfilePic',
                     type: 'PUT',
                     data: {
@@ -79,11 +71,7 @@ function updateInfo() {
     province = $('#provinceInput').val()
     console.log(firstName, lastName, age, email, city, province)
     $.ajax({
-<<<<<<< HEAD
-        url: ` https://2800project.azurewebsites.net//updateUserInfo`,
-=======
         url: ` https://2800azurehostv2.azurewebsites.net//updateUserInfo`,
->>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/updateUserInfo',
         type: 'PUT',
         data: {
