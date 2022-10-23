@@ -79,7 +79,7 @@ function updateInfo() {
     province = $(`#province${userId}`).val()
     document.getElementById(`user${userId}`).disabled = true
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//updateUserInfo`,
+        url: ` https://2800project.azurewebsites.net///updateUserInfo`,
         // url: 'http://localhost:5002/updateUserInfo',
         type: 'PUT',
         data: {
@@ -126,7 +126,7 @@ function getPosts() {
     postType = $(this).attr('id')
     console.log(userId, postType)
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//getPosts/${postType}`,
+        url: ` https://2800project.azurewebsites.net///getPosts/${postType}`,
         // url: `http://localhost:5002/getPosts/${userId}/${postType}`,
         type: 'GET',
         success: populatePosts
@@ -136,7 +136,7 @@ function getPosts() {
 // Get all users
 function getUsers() {
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//getAllUsers`,
+        url: ` https://2800project.azurewebsites.net///getAllUsers`,
         // url: 'http://localhost:5002/getAllUsers',
         type: 'GET',
         success: populateUsers
@@ -148,11 +148,11 @@ function deletePost(){
     postId=$(this).attr('value')
     postType=$(this).attr('id')
     if(postType=='housePosts'){
-        deleteUrl=` https://tranquil-taiga-64921.herokuapp.com//housingPost/delete/${postId}`
+        deleteUrl=` https://2800project.azurewebsites.net///housingPost/delete/${postId}`
     }else if(postType=='communityPosts'){
-        deleteUrl=` https://tranquil-taiga-64921.herokuapp.com//ownCommunityPost/delete/${postId}`
+        deleteUrl=` https://2800project.azurewebsites.net///ownCommunityPost/delete/${postId}`
     }else if(postType=='jobPosts'){
-        deleteUrl=` https://tranquil-taiga-64921.herokuapp.com//jobPost/delete/${postId}`
+        deleteUrl=` https://2800project.azurewebsites.net///jobPost/delete/${postId}`
     }
     $.ajax({
         url: deleteUrl,

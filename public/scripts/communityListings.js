@@ -24,7 +24,7 @@ function directPost(){
     postId=$(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//communityPost/${postId}`,
+        url: ` https://2800project.azurewebsites.net///communityPost/${postId}`,
         // url: `http://localhost:5002/communityPost/${postId}`,
         type: 'GET',
         success: (x)=>{
@@ -38,7 +38,7 @@ function directPost(){
 {/* // Ajax call to get all posts from the database and call populatePosts to populate the page, when the page loads. */}
 function getPosts() {
     $.ajax({
-        url:' https://tranquil-taiga-64921.herokuapp.com//communityPost/read',
+        url:' https://2800project.azurewebsites.net///communityPost/read',
         // url: 'http://localhost:5002/communityPost/read',
         type: 'GET',
         success: populatePosts
@@ -53,7 +53,7 @@ function directChat() {
     otherUserId = $(this).attr('id')
     console.log(otherUserId)
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//chat/${otherUserId}`,
+        url: ` https://2800project.azurewebsites.net///chat/${otherUserId}`,
         // url: `http://localhost:5002/chat/${otherUserId}`,
         type: 'GET',
         success: (x) => {

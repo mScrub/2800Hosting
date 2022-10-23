@@ -17,7 +17,7 @@ function populateUserInfo(userobj) {
 
 function getUserobj() {
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//user`,
+        url: ` https://2800project.azurewebsites.net///user`,
         // url: 'http://localhost:5002/user',
         type: 'GET',
         success: populateUserInfo
@@ -39,7 +39,7 @@ function uploadProfile() {
             uploadStorage.snapshot.ref.getDownloadURL().then((pictureURL) => {
                 console.log('profile picture URL: ', pictureURL);
                 $.ajax({
-                    url: ` https://tranquil-taiga-64921.herokuapp.com//uploadProfilePic`,
+                    url: ` https://2800project.azurewebsites.net///uploadProfilePic`,
                     // url: 'http://localhost:5002/uploadProfilePic',
                     type: 'PUT',
                     data: {
@@ -71,7 +71,7 @@ function updateInfo() {
     province = $('#provinceInput').val()
     console.log(firstName, lastName, age, email, city, province)
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//updateUserInfo`,
+        url: ` https://2800project.azurewebsites.net///updateUserInfo`,
         // url: 'http://localhost:5002/updateUserInfo',
         type: 'PUT',
         data: {

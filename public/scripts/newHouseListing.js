@@ -47,7 +47,7 @@ function uploadImage() {
 function loadEventsToMainDiv() {
     $('#ownPosts').empty()
     $.ajax({
-        url:' https://tranquil-taiga-64921.herokuapp.com//ownHousePost/read',
+        url:' https://2800project.azurewebsites.net///ownHousePost/read',
         // url: 'http://localhost:5002/ownHousePost/read',
         type: 'GET',
         success: populatePosts
@@ -60,7 +60,7 @@ function deleteEvent() {
     var postId = $(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: ` https://tranquil-taiga-64921.herokuapp.com//housingPost/delete/${postId}`,
+        url: ` https://2800project.azurewebsites.net///housingPost/delete/${postId}`,
         // url: `http://localhost:5002/housingPost/delete/${postId}`,
         type: 'get',
         success: (x) => {
@@ -88,7 +88,7 @@ function submitForm() {
     } else {
         console.log(title, description, price, time)
         $.ajax({
-            url: " https://tranquil-taiga-64921.herokuapp.com//newHousePost/create",
+            url: " https://2800project.azurewebsites.net///newHousePost/create",
             // url: "http://localhost:5002/newHousePost/create",
             type: "put",
             data: {
