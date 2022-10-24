@@ -67,6 +67,7 @@ If you would like to use our application but connect to your own database, in th
 * bcrypt
 * FirebaseStorage
 * Heroku
+* Azure
 
 
 # Needed Tools
