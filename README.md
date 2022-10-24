@@ -31,7 +31,7 @@ TBD for proper Usage guide
 In order to get started, you need to clone our repository:
 
 ```
-git clone https://github.com/vasshorin/2800-202210-DTC06.git
+git clone https://github.com/mScrub/2800Hosting.git
 ```
 Run the following command to install all the dependencies:
 
