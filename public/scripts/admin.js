@@ -82,7 +82,7 @@ function updateInfo() {
 <<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//updateUserInfo`,
 =======
-        url: ` https://2800azurehostv2.azurewebsites.net//updateUserInfo`,
+        url: ` https://2800hostlocal.azurewebsites.net/updateUserInfo`,
 >>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/updateUserInfo',
         type: 'PUT',
@@ -133,7 +133,7 @@ function getPosts() {
 <<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//getPosts/${postType}`,
 =======
-        url: ` https://2800azurehostv2.azurewebsites.net//getPosts/${postType}`,
+        url: ` https://2800hostlocal.azurewebsites.net/getPosts/${postType}`,
 >>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: `http://localhost:5002/getPosts/${userId}/${postType}`,
         type: 'GET',
@@ -147,7 +147,7 @@ function getUsers() {
 <<<<<<< HEAD
         url: ` https://2800project.azurewebsites.net//getAllUsers`,
 =======
-        url: ` https://2800azurehostv2.azurewebsites.net//getAllUsers`,
+        url: ` https://2800hostlocal.azurewebsites.net/getAllUsers`,
 >>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
         // url: 'http://localhost:5002/getAllUsers',
         type: 'GET',
@@ -167,11 +167,11 @@ function deletePost(){
     }else if(postType=='jobPosts'){
         deleteUrl=` https://2800project.azurewebsites.net//jobPost/delete/${postId}`
 =======
-        deleteUrl=` https://2800azurehostv2.azurewebsites.net//housingPost/delete/${postId}`
+        deleteUrl=` https://2800hostlocal.azurewebsites.net/housingPost/delete/${postId}`
     }else if(postType=='communityPosts'){
-        deleteUrl=` https://2800azurehostv2.azurewebsites.net//ownCommunityPost/delete/${postId}`
+        deleteUrl=` https://2800hostlocal.azurewebsites.net/ownCommunityPost/delete/${postId}`
     }else if(postType=='jobPosts'){
-        deleteUrl=` https://2800azurehostv2.azurewebsites.net//jobPost/delete/${postId}`
+        deleteUrl=` https://2800hostlocal.azurewebsites.net/jobPost/delete/${postId}`
 >>>>>>> 1e3830dacff6bec009a1d10ab311643d19769b88
     }
     $.ajax({

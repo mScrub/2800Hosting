@@ -24,7 +24,7 @@ function directPost(){
     postId=$(this).attr('id')
     console.log(postId)
     $.ajax({
-        url: ` https://2800azurehostv2.azurewebsites.net//communityPost/${postId}`,
+        url: ` https://2800hostlocal.azurewebsites.net/communityPost/${postId}`,
         // url: `http://localhost:5002/communityPost/${postId}`,
         type: 'GET',
         success: (x)=>{
@@ -38,7 +38,7 @@ function directPost(){
 {/* // Ajax call to get all posts from the database and call populatePosts to populate the page, when the page loads. */}
 function getPosts() {
     $.ajax({
-        url:' https://2800azurehostv2.azurewebsites.net//communityPost/read',
+        url:' https://2800hostlocal.azurewebsites.net/communityPost/read',
         // url: 'http://localhost:5002/communityPost/read',
         type: 'GET',
         success: populatePosts
@@ -53,7 +53,7 @@ function directChat() {
     otherUserId = $(this).attr('id')
     console.log(otherUserId)
     $.ajax({
-        url: ` https://2800azurehostv2.azurewebsites.net//chat/${otherUserId}`,
+        url: ` https://2800hostlocal.azurewebsites.net/chat/${otherUserId}`,
         // url: `http://localhost:5002/chat/${otherUserId}`,
         type: 'GET',
         success: (x) => {

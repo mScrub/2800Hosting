@@ -22,7 +22,7 @@ async function authenticateUser() {
         $('#password').val('')
     } else {
     await $.ajax({
-            url: ' https://2800azurehostv2.azurewebsites.net//login/authentication',
+            url: ' https://2800hostlocal.azurewebsites.net/login/authentication',
             // url: 'http://localhost:5002/login/authentication',
             type: 'POST',
             data: {
