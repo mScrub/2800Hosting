@@ -10,17 +10,17 @@ async function authenticateUser() {
     password = $('#password').val()
     // console.log(email, password)
   // if email or password empty, reload page
-    if (email === "" || password === "") {
-        alert("Please fill out all fields")
-        $('#email').val('')
-        $('#password').val('')
-    } 
-    // verfiy email field is a valid format 
-    else if (!validateEmail(email)) {
-        alert("Please enter a valid email")
-        $('#email').val('')
-        $('#password').val('')
-    } else {
+    // if (email === "" || password === "") {
+    //     alert("Please fill out all fields")
+    //     $('#email').val('')
+    //     $('#password').val('')
+    // } 
+    // // verfiy email field is a valid format 
+    // else if (!validateEmail(email)) {
+    //     alert("Please enter a valid email")
+    //     $('#email').val('')
+    //     $('#password').val('')
+    // } else {
     await $.ajax({
             url: ' https://2800hostlocal.azurewebsites.net/login/authentication',
             // url: 'http://localhost:5002/login/authentication',
@@ -47,7 +47,7 @@ async function authenticateUser() {
         }
     })
 }
-}
+
 
 function setup() {
     $('body').on('click', '#login', authenticateUser)
