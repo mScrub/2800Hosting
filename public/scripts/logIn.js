@@ -8,7 +8,7 @@ function validateEmail() {
 async function authenticateUser() {
     email = $('#email').val()
     password = $('#password').val()
-    console.log(email, password)
+    // console.log(email, password)
   // if email or password empty, reload page
     if (email === "" || password === "") {
         alert("Please fill out all fields")
